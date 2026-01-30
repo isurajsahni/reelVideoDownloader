@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 min-h-screen;
+  }
+}
+
+/* Toast overrides for dark mode */
+.dark .toast {
+  @apply bg-slate-800 border border-slate-700 text-slate-100;
+}
